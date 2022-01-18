@@ -1,0 +1,160 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.bg-image{
+    background-color: aliceblue;
+    background-image: url(./img/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{ 
+    color: beige;
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: bisque;
+}
+.shadow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container{
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh; 
+}
+/* nav */
+ .main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 20px 0;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.main-nav ul{
+    display: flex;
+}
+.main-nav ul li{
+    padding: 0 10px;
+}
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+.main-nav ul li a:hover{
+    border-bottom: 2px solid bisque;
+}
+@keyframes Slide {
+    0% {border-top: 2px solid bisque;}
+    25% {border-left: 2px solid bisque;}
+    50% {border-right: 2px solid bisque;}
+    75% {border-bottom: 2px solid bisque;}
+}
+.main-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+}
+.hero-btn {
+    margin: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero-btn:hover {
+    color: black;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.hero-btn:active {
+    background-color: white;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > h1 {
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+.card {
+    width: 30%;
+    height: fit-content;
+    margin: 8px;
+    position: relative;
+}
+.card img {
+    width: 100%;
+
+}
+
+.shad {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-1:hover .shad {
+   display: flex;
+}
+.shad span {
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+} 
